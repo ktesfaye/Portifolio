@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Kirubel Tesfaye</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+.bg-image {
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 {
+    background-image: url("Edited/FRONtPAGE3 (1).png");
+    background-attachment: fixed;
+
+}
+.img2 { background-image: url("Edited/LogoCollage.png");
+}
+.img3 { background-image: url("Chosen Few/MG_0619.jpg");
+    background-attachment: fixed;
+}
+.img4 { background-image: url("Edited/Golf.png"); }
+.img5 { background-image: url("Edited/MG_1877.png"); }
+.img6 { background-image: url("Edited/img_woods.jpg"); }
+.ft-size {font-size: 90px;}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.col-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 2000px;
+}
+
+
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+body {
+  background-color: #111111;
+}
+h1,h2,h3,h4,h5 {font-family: "Segoe UI", sans-serif}
+.w3-third img{margin-bottom: 10px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+
+.txt {
+  color: white;
+}
+</style>
+<div class="w3-large" style="margin-top:25px"></div>
+
+<div class="w3-bar">
+  <div class="left"><a href="index.html" title="Slides Framework"><svg style="width:82px;height:24px"><img src="Edited/namelgo.png"></use></svg></a>
+
+  <a href="artwork.html" class="w3-right w3-bar-item w3-button txt">Artwork</a>
+  <a href="logos.html" class="w3-right w3-bar-item w3-button txt">Logos</a>
+  <a href="photography.html" class="w3-right w3-bar-item w3-button txt">Photography</a>
+  <a href="Illustrations.html" class="w3-right w3-bar-item w3-button txt">Illustrations</a>
+  <a href="about.html" class="w3-right w3-bar-item w3-button txt">About</a>
+
+</div></div>
+
+  <!-- Footer -->
+
+
+  <div class="myModal">
+    <div class="modal-content">
+
+  	  <div class="mySlides">
+  		  <img src="Chosen Few/FRONTPAGE.png" style="width:100%">
+  	  </div>
+      <div class="mySlides">
+        <img src="Chosen Few/Golf.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="Chosen Few/Music Madness2.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="Chosen Few/Bike COOP (1)-1.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="Chosen Few/Writting.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="Chosen Few/Zehir2-01.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="Chosen Few/LogoCollage.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="Chosen Few/ESOL main2019BOOKMARK-2.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="Chosen Few/Levitt Stickers2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="Chosen Few/Food Fest.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="Chosen Few/MaGirl.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="Chosen Few/lift.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+          <img src="Chosen Few/ESOL monk BOOKMARK 2020 copy.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="Chosen Few/ESOL jen BOOKMARK 2020 copy.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="Chosen Few/ESOL joerge BOOKMARK 2020 copy.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="Chosen Few/ESOL wen BOOKMARK 2020 copy.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+  	<div class="column">
+  		<img class="demo cursor" src="Chosen Few/FRONTPAGE.png" style="width:100%" onclick="currentSlide(1)" alt="">
+  	</div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/Golf.png" style="width:100%" onclick="currentSlide(2)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/Music Madness2.png" style="width:100%" onclick="currentSlide(3)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/Bike COOP (1)-1.png" style="width:100%" onclick="currentSlide(4)" alt="">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/Writting.png" style="width:100%" onclick="currentSlide(5)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/Zehir2-01.png" style="width:100%" onclick="currentSlide(6)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/LogoCollage.png" style="width:100%" onclick="currentSlide(7)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/ESOL main2019BOOKMARK-2.png" style="width:100%" onclick="currentSlide(8)" alt="">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/Levitt Stickers2.jpg" style="width:100%" onclick="currentSlide(9)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/Food Fest.jpg" style="width:100%" onclick="currentSlide(10)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/MaGirl.jpg" style="width:100%" onclick="currentSlide(11)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/lift.png" style="width:100%" onclick="currentSlide(12)" alt="">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/ESOL monk BOOKMARK 2020 copy.jpg" style="width:100%" onclick="currentSlide(13)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/ESOL jen BOOKMARK 2020 copy.jpg" style="width:100%" onclick="currentSlide(14)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/ESOL joerge BOOKMARK 2020 copy.jpg" style="width:100%" onclick="currentSlide(15)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Chosen Few/ESOL wen BOOKMARK 2020 copy.jpg" style="width:100%" onclick="currentSlide(16)" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+</body>
+</html>
