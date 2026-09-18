@@ -1,3 +1,9 @@
+
+<?php
+$image_dir = 'Chosen Few/';
+$image_files = glob($image_dir . '*.{webp,jpg,jpeg,png,gif}', GLOB_BRACE); // Get all image files in the directory
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -230,8 +236,20 @@
 
 
 
-
 <div class="split-slideshow">
+  <div class="slideshow">
+    <div class="slider">
+      <?php
+      foreach ($image_files as $image) {
+        echo '<div class="item">';
+        echo '<img src="' . ${image} . '" width="100%">';
+        echo '</div>';
+      }
+      ?>
+    </div>
+  </div>
+</div>
+<!-- <div class="split-slideshow">
   <div class="slideshow">
     <div class="slider">
 		<div class="item">
@@ -264,7 +282,7 @@
     </div>
   </div>
 
-</div>
+</div> -->
 
 
 <!-- Panel Bottom #01 -->
@@ -298,13 +316,11 @@
 
 <!-- Loading Progress Bar -->
 <div class="progress-bar blue"></div>
-<script>
-  
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
-
-<script src="js/index.js"></script>
+<script>  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+  <script src="js/index.js"></script>
 </script>
 
 </body>
